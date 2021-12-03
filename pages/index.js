@@ -11,6 +11,7 @@ export default function Home() {
 			<Head>
 				<title>Battle Saga</title>
 				<link rel="icon" href="/favicon.ico" />
+				<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet"></link>
 			</Head>
 			<Hero />
 			<Thegame />

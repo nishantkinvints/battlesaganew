@@ -25,10 +25,13 @@ const EmailSubscribe = () => {
 
     return (
         <div className="email_subscribe_wrap">
-            <form action="" onSubmit={submitform}>
-                <input type="email" name="email"  ref={emailref}/>
-                <button type="submit">submit</button>
-            </form>
+            <div className="email_subscribe_inner">
+                <p> Subscribe to </p>
+                <form action="" onSubmit={submitform}>
+                    <input type="email" name="email" placeholder="Email*" ref={emailref}/>
+                    <button type="submit" className="submit_btn">Subscribe</button>
+                </form>
+            </div>
         </div>
     )
 }

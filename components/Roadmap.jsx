@@ -2,8 +2,8 @@ import React from 'react'
 
 const Roadmap = () => {
     return (
-        <div>
-            <div className="content">
+        <div className="roadmap_wrapper">
+            <div className="container">
                 <div className="field field-name-field-content field-type-text-long field-label-hidden">
                     <div className="large-8 columns grid-system-column introtext">
                         <div className="mobile-8 large-6 columns grid-system-column">
