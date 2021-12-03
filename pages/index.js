@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
-import Socials from '../components/Socials';
+import Thegame from '../components/Thegame.jsx';
+import Community from '../components/Community.jsx';
+import Roadmap from '../components/Roadmap.jsx';
+import EmailSubscribe from '../components/EmailSubscribe.jsx';
 
 export default function Home() {
 	return (
@@ -10,6 +13,10 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Hero />
+			<Thegame />
+			<Community />
+			<Roadmap />
+			<EmailSubscribe />
 		</div>
 	);
 }

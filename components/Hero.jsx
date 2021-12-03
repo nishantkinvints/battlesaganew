@@ -33,14 +33,14 @@ const Hero = () => {
     <div className="battle_saga_wrapper">
       {/* This div is used for the top navbar */}
       <div className="dark_bg">
-        <Image src={DarkBg} objectFit="contain" layout="responsive" />
+        <Image src={DarkBg} alt="dark"/>
       </div>
       <div className="base_img">
-        <Image src={Base} objectFit="contain" />
+        <Image src={Base} alt="base"/>
         <div className="logo_battlesaga_wrap">
-          <Image src={LogoBase} objectFit="contain" />
+          <Image src={LogoBase} alt="logo battel"/>
           <div className="battleSaga_img">
-            <Image src={BattleSaga} objectFit="contain" />
+            <Image src={BattleSaga} alt="battel"/>
           </div>
         </div>
       </div>
@@ -49,7 +49,6 @@ const Hero = () => {
       <div className="tree_and_strone">
         <Image
           src={ElementSide1}
-          objectFit="contain"
           alt="Element side 2"
           width={600}
           // layout="responsive"
@@ -59,7 +58,7 @@ const Hero = () => {
       {/* Thunder */}
 
       {/* <div className="absolute top-8 right-1/2 w-[1020px]">
-				<Image src={Thunder} objectFit="contain" />
+				<Image src={Thunder} />
 			</div> */}
       <motion.div
         animate={{
@@ -85,7 +84,7 @@ const Hero = () => {
         transition={{ duration: 0.9, yoyo: Infinity, delay: 0.7 }}
         className="birds_left"
       >
-        <Image src={Lightning1} objectFit="contain" />
+        <Image src={Lightning1}  alt="light"/>
       </motion.div>
 
       <motion.div
@@ -112,14 +111,14 @@ const Hero = () => {
         transition={{ duration: 0.9, yoyo: Infinity, delay: 0.7 }}
         className="birds_right"
       >
-        <Image src={Lightning2} objectFit="contain" />
+        <Image src={Lightning2} alt="Lightning"/>
       </motion.div>
 
       {/* This div is used for the characters */}
       <div className="battle_saga_mens_wrapper">
         <div className="battle_saga_mens_inner">
           <div className="orge_img">
-            <Image src={Orge} objectFit="contain" />
+            <Image src={Orge} alt="Orge"/>
           </div>
 
           <motion.div
@@ -127,8 +126,8 @@ const Hero = () => {
             transition={{ duration: 1, yoyo: Infinity, delay: 0.7 }}
             className="dragonL_img"
           >
-            <span className="w-[450px]">
-              <Image src={DragonL} objectFit="contain" />
+            <span>
+              <Image src={DragonL} alt="DragonL"/>
             </span>
           </motion.div>
 
@@ -137,38 +136,38 @@ const Hero = () => {
             transition={{ duration: 1, yoyo: Infinity }}
             className="dragonR_img"
           >
-            <span className="w-[450px]">
-              <Image src={DragonR} objectFit="contain" />
+            <span>
+              <Image src={DragonR} alt="DragonR"/>
             </span>
           </motion.div>
 
           <div className="warrior2_img_wrap">
             <span className="warrior2_img_inner">
-              <Image src={Warrior2} objectFit="contain" />
+              <Image src={Warrior2} alt="Warrior2"/>
             </span>
           </div>
           <div className="archer1_wrap">
             <span className="archer1_inner">
-              <Image src={Archer1} objectFit="contain" />
+              <Image src={Archer1} alt="Archer1"/>
             </span>
           </div>
           <div className="Warrior1_img_wrap">
             <span className="Warrior1_img_wrap_inner">
-              <Image src={Warrior1} objectFit="contain" />
+              <Image src={Warrior1} alt="Warrior1"/>
             </span>
           </div>
           <div className="spartan_wrap_img">
             <span className="spartan_inner_img">
-              <Image src={Spartan} objectFit="contain" />
+              <Image src={Spartan} alt="Spartan"/>
             </span>
           </div>
           <div className="archer2_img_wrap">
             <div className="archer2_img_inner">
-              <Image src={Archer2} objectFit="contain" />
+              <Image src={Archer2} alt="Archer2"/>
             </div>
           </div>
           <div className="shadow_img_wrap">
-            <Image src={Shadow} objectFit="contain" />
+            <Image src={Shadow} alt="Shadow"/>
           </div>
         </div>
       </div>
@@ -177,7 +176,6 @@ const Hero = () => {
       <div className="elementside2_right">
         <Image
           src={ElementSide2}
-          objectFit="contain"
           alt="Element side 2"
           width={600}
         />
@@ -189,27 +187,28 @@ const Hero = () => {
         transition={{ delay: 1 }}
         className="comingSoom_wrap"
       >
-        <Image src={ComingSoom} objectFit="contain" />
+        <Image src={ComingSoom} alt="ComingSoom"/>
         <div className="comingSoom_inner">
-          <Image src={Copyright} objectFit="contain" />
+          <Image src={Copyright} alt="Copyright"/>
         </div>
       </motion.div>
 
       {/* Used for the bottom grass section */}
       <div className="grass_wrap">
-        <Image src={Grass} objectFit="contain" layout="responsive" />
+        <Image src={Grass} layout="responsive" alt="light"/>
       </div>
       <div className="grass_wrap_img">
         <Image
           src={GrassFront}
-          objectFit="contain"
-          // layout="responsive"
+          alt="light"
         />
       </div>
 
       <div className="socials_wrapper">
         <Socials />
       </div>
+
+
     </div>
   );
 };
