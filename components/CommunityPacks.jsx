@@ -30,7 +30,7 @@ const CommunityPacks = () => {
                 return(
                     <li key={val.id}>
                         <a href="#0">
-                            <Image src={val.communitypacks_image} alt="community packs"/>
+                            {/* <Image src={val.communitypacks_image} alt="community packs"/> */}
                         </a>
                     </li>
                 )

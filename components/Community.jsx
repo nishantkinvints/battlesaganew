@@ -33,7 +33,7 @@ const Community = () => {
         <div className="community_wrap_main">
             <div className="container">
                 <Sectiontitle title="Community"/>
-                <ul>
+                <ul className="community_list_wrap">
                     {
                         thegamedata.map((val, index) => {
                             return(

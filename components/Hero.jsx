@@ -181,18 +181,6 @@ const Hero = () => {
         />
       </div>
 
-      {/* Used for the bottom section like Coming soon and copyright logo */}
-      <motion.div
-        animate={{ y: [-800, 0], x: ['-50%', '-50%'], opacity: [0, 1] }}
-        transition={{ delay: 1 }}
-        className="comingSoom_wrap"
-      >
-        <Image src={ComingSoom} alt="ComingSoom"/>
-        <div className="comingSoom_inner">
-          <Image src={Copyright} alt="Copyright"/>
-        </div>
-      </motion.div>
-
       {/* Used for the bottom grass section */}
       <div className="grass_wrap">
         <Image src={Grass} layout="responsive" alt="light"/>
